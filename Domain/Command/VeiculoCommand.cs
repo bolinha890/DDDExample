@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Command
 {
-    internal class VeiculoCommand
+    public class VeiculoCommand
     {
         public int VeiculoId { get; set; }
 

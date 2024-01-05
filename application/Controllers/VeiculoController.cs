@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Domain;
+using Domain.Command;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace application.Controllers
@@ -7,18 +9,28 @@ namespace application.Controllers
     [ApiController]
     public class VeiculoController : ControllerBase
     {
-        [HttpPost("CadastrarVeiculo")]
-        public IActionResult PostAsync([FromBody] VeiculoCommand command)
+        private readonly IveiculoService _veiculoService;
+
+        public VeiculoController(IveiculoService veiculoService)
+        {
+
+        }
+        [HttpPost]
+        [Route ("CadastrarVeiculo")]
+        public async  Task< IActionResult> PostAsync([FromBody] VeiculoCommand command)
+        {
+           await _veiculoService.PostAsync (command);
+            return Ok();
+        }
+        [HttpGet]
+        [Route ("SimularAluguel")]
+        public IActionResult GetAsync()
         {
             return Ok();
         }
-
-        public IActionResult SimularAluguel()
-        {
-            return Ok();
-        }
-
-        public IActionResult Alguar()
+        [HttpPost]
+        [Route ("Alugar")]
+        public IActionResult PostAsync()
         {
             return Ok();
         }

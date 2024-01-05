@@ -35,3 +35,5 @@ C:\Users\gabriel.vrbatista\source\repos\application\application\obj\Debug\net8.0
 C:\Users\gabriel.vrbatista\source\repos\application\application\obj\Debug\net8.0\application.pdb
 C:\Users\gabriel.vrbatista\source\repos\application\application\obj\Debug\net8.0\application.genruntimeconfig.cache
 C:\Users\gabriel.vrbatista\source\repos\application\application\obj\Debug\net8.0\ref\application.dll
+C:\Users\gabriel.vrbatista\source\repos\application\application\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\gabriel.vrbatista\source\repos\application\application\bin\Debug\net8.0\Infrastructure.pdb
