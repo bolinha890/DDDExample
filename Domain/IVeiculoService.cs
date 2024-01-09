@@ -15,10 +15,12 @@ namespace Domain
         // não é feita implementação de nada 
 
 
-         Task  PostAsync(VeiculoCommand command );
+         Task <string> PostAsync(VeiculoCommand command );
 
         void PostAsync();
 
         void GetAsync();
+
+        
     }
 }

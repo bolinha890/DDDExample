@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Command
+namespace Domain.Entidades
 {
     public class VeiculoCommand
     {
@@ -19,7 +19,7 @@ namespace Domain.Command
 
         public EMontadora Montadora { get; set; }
 
-        public bool Alugado { get; set; }
+        public bool      { get; set; }
 
     }
 }

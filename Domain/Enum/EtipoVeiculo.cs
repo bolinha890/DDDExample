@@ -8,9 +8,9 @@ namespace Domain.Enum
 {
     public enum EtipoVeiculo
     {
-        Hatchs = 1,
+        Hatch = 1,
         Sedans = 2,
-        SUVs = 3,
+        SUV = 3,
         Picapes = 4,
         Utilitários = 5,
 

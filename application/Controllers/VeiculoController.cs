@@ -19,10 +19,10 @@ namespace application.Controllers
         [Route ("CadastrarVeiculo")]
         public async  Task< IActionResult> PostAsync([FromBody] VeiculoCommand command)
         {
-           await _veiculoService.PostAsync (command);
-            return Ok();
+          
+            return Ok(await _veiculoService.PostAsync(command));
         }
-        [HttpGet]
+        [HttpGet] 
         [Route ("SimularAluguel")]
         public IActionResult GetAsync()
         {
